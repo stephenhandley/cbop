@@ -1,0 +1,18 @@
+{
+  "name": "cbop",
+  "version": "1.0.1",
+  "description": "Callback or promise",
+  "license": "substanceware",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --ui exports ./test.js"
+  },
+  "author": {
+    "name": "Stephen Handley",
+    "email": "stephen.handley@gmail.com",
+    "url": "http://person.sh"
+  },
+  "devDependencies": {
+    "mocha": "2.3.2"
+  }
+}
