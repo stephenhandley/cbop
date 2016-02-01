@@ -10,7 +10,7 @@ function hasKeywordArgs (args) {
     return false;
   }
 
-  return ['error', 'value'].some(function (arg) {
+  return ['callback', 'error', 'value'].some(function (arg) {
     return first.hasOwnProperty(arg);
   });
 }

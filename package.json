@@ -1,6 +1,6 @@
 {
   "name": "cbop",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Callback or promise",
   "license": "substanceware",
   "main": "index.js",

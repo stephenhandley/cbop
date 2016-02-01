@@ -23,6 +23,13 @@ module.exports = {
           Assert.equal(val, value);
           done();
         });
+      },
+
+      "when no error or value" : function (done) {
+        cbop().then(function (val) {
+          Assert.equal(val, null);
+          done();
+        });
       }
     },
 
@@ -44,6 +51,16 @@ module.exports = {
           callback : function (err, val) {
             Assert.equal(err, null);
             Assert.equal(val, value);
+            done();
+          }
+        });
+      },
+
+      "when no error or value" : function (done) {
+        cbop({
+          callback : function (err, val) {
+            Assert.equal(err, null);
+            Assert.equal(val, null);
             done();
           }
         });
